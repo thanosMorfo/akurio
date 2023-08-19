@@ -38,9 +38,50 @@
             border: 2px solid white;
             border-radius: 5px;
         }
+        
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        #toggleText {
+            display: none;
+        }
+        
+        #toggleParentheses {
+            display: inline;
+        }
     </style>
 </head>
 <body>
+    <h1>Celebrating Us</h1>
+    
+    <div class="photo-gallery">
+        <!-- Προσθέστε όλες τις υπόλοιπες φωτογραφίες και τα links όπως προηγουμένως -->
+    </div>
+
+    <script>
+        function toggleText() {
+            var text = document.getElementById("toggleText");
+            var parentheses = document.getElementById("toggleParentheses");
+
+            if (text.style.display === "none") {
+                text.style.display = "inline";
+                parentheses.style.display = "none";
+            } else {
+                text.style.display = "none";
+                parentheses.style.display = "inline";
+            }
+        }
+    </script>
+    
+    <footer>
+        <p id="toggleText">Αξιζει</p>
+        <p id="toggleParentheses">(<a href="javascript:void(0);" onclick="toggleText()">ς</a>)</p>
+    </footer>
+</body>
+</html>
+
     <h1>Celebrating Us</h1>
     
     <div class="photo-gallery">
